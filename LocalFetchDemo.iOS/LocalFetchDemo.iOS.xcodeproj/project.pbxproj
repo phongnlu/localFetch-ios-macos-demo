@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E5FE1D12224E6D60036F8D2 /* NativeFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FE1D02224E6D60036F8D2 /* NativeFileManager.swift */; };
+		3E5FE1D42224E76A0036F8D2 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E5FE1D32224E76A0036F8D2 /* dummy.txt */; };
+		3E5FE1D62225DF310036F8D2 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FE1D52225DF310036F8D2 /* System.swift */; };
+		3E860E9E221E46180090D14C /* XWKWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E860E9C221E46180090D14C /* XWKWebView.framework */; };
+		3E860E9F221E46180090D14C /* LocalFetch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E860E9D221E46180090D14C /* LocalFetch.framework */; };
 		3EA17847221E121B0014A2AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA17846221E121B0014A2AD /* AppDelegate.swift */; };
 		3EA17849221E121B0014A2AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA17848221E121B0014A2AD /* ViewController.swift */; };
 		3EA1784C221E121B0014A2AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA1784A221E121B0014A2AD /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E5FE1D02224E6D60036F8D2 /* NativeFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeFileManager.swift; sourceTree = "<group>"; };
+		3E5FE1D32224E76A0036F8D2 /* dummy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
+		3E5FE1D52225DF310036F8D2 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		3E860E9C221E46180090D14C /* XWKWebView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWKWebView.framework; path = Carthage/Build/iOS/XWKWebView.framework; sourceTree = "<group>"; };
+		3E860E9D221E46180090D14C /* LocalFetch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalFetch.framework; path = Carthage/Build/iOS/LocalFetch.framework; sourceTree = "<group>"; };
 		3EA17843221E121B0014A2AD /* LocalFetchDemo.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalFetchDemo.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA17846221E121B0014A2AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EA17848221E121B0014A2AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +39,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E860E9E221E46180090D14C /* XWKWebView.framework in Frameworks */,
+				3E860E9F221E46180090D14C /* LocalFetch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E5FE1CF2224E6BD0036F8D2 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				3E5FE1D02224E6D60036F8D2 /* NativeFileManager.swift */,
+				3E5FE1D52225DF310036F8D2 /* System.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		3E5FE1D22224E73B0036F8D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E5FE1D32224E76A0036F8D2 /* dummy.txt */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E860E9B221E46180090D14C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E860E9D221E46180090D14C /* LocalFetch.framework */,
+				3E860E9C221E46180090D14C /* XWKWebView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3EA1783A221E121A0014A2AD = {
 			isa = PBXGroup;
 			children = (
 				3EA17845221E121B0014A2AD /* LocalFetchDemo.iOS */,
 				3EA17844221E121B0014A2AD /* Products */,
+				3E860E9B221E46180090D14C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +93,8 @@
 		3EA17845221E121B0014A2AD /* LocalFetchDemo.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3E5FE1D22224E73B0036F8D2 /* Supporting Files */,
+				3E5FE1CF2224E6BD0036F8D2 /* Routes */,
 				3EA17846221E121B0014A2AD /* AppDelegate.swift */,
 				3EA17848221E121B0014A2AD /* ViewController.swift */,
 				3EA1784A221E121B0014A2AD /* Main.storyboard */,
@@ -74,6 +115,7 @@
 				3EA1783F221E121B0014A2AD /* Sources */,
 				3EA17840221E121B0014A2AD /* Frameworks */,
 				3EA17841221E121B0014A2AD /* Resources */,
+				3E860E9A221E45BF0090D14C /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -125,18 +167,46 @@
 				3EA17851221E121C0014A2AD /* LaunchScreen.storyboard in Resources */,
 				3EA1784E221E121C0014A2AD /* Assets.xcassets in Resources */,
 				3EA1784C221E121B0014A2AD /* Main.storyboard in Resources */,
+				3E5FE1D42224E76A0036F8D2 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E860E9A221E45BF0090D14C /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/XWKWebView.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/LocalFetch.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/XWKWebView.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LocalFetch.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3EA1783F221E121B0014A2AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E5FE1D62225DF310036F8D2 /* System.swift in Sources */,
 				3EA17849221E121B0014A2AD /* ViewController.swift in Sources */,
 				3EA17847221E121B0014A2AD /* AppDelegate.swift in Sources */,
+				3E5FE1D12224E6D60036F8D2 /* NativeFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +354,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2PK47M46JY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LocalFetchDemo.iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,6 +377,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2PK47M46JY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LocalFetchDemo.iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (

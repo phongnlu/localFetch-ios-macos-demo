@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>    
+</head>
+
+<body>
+
+    <h2>Test Website - to demonstrate Local Fetch</h2>
+
+    <h4>REMOTE FETCH OUTPUT:</h4>
+    <div><pre><div id="output-remote">...</div></pre></div>
+
+    <h4>LOCAL FETCH OUTPUT:</h4>
+    <div><pre><div id="output-local">...</div></pre></div>
+
+    <br />
+    <br />
+
+    <div>
+        <p><input type='button' value='REMOTE FETCH' onclick='remoteFetchClicked()' /></p>
+        <p><input type='button' value='LOCAL FETCH (read file)' onclick='localFetchReadFileClicked()' /></p>
+        <p><input type='button' value='LOCAL FETCH (get OS info)' onclick='localFetchOsInfoClicked()' /></p>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
